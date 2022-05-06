@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void solve(){
+        int n,x,y,t,o,v,u,g;
+        cin>>n>>x>>y;
+        
+        t=n-x+x-1+n-y+y-1;
+        o=min(x-1,y-1);
+        u=min(x-1,n-y);
+        v=min(n-x,y-1);
+        g=min(n-x,n-y);
+        t+=o+u+v+g;
+        cout<<t<<endl;
+        
+        
+}
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	
+	while(t--)
+	solve();
+	return 0;
+}

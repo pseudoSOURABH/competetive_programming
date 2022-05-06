@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void solve(){
+        int N;
+        cin>>N;
+        
+        int price=50;
+        
+        int cost=(price*70)/100;
+        int profit=price-cost;
+        
+        cout<<profit*N<<endl;
+}
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	
+	while(t--)
+         {
+                 solve();
+         }
+	return 0;
+}

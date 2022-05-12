@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void solve(){
+        int a,b,m;
+        cin>>a>>b>>m;
+        
+       if(a>b){
+               cout<<min(a-b,m-a+b)<<endl;
+       }
+       
+       else
+       {
+               cout<<min(b-a,a+m-b)<<endl;
+       }
+        
+        
+}
+
+int main() {
+	// your code goes 
+	
+	int t;
+	cin>>t;
+	
+	while(t--)
+	solve();
+	return 0;
+}

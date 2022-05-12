@@ -1,0 +1,67 @@
+/*First,solve the problem then write the code:);)*/
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define fastio ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+#define test ll t;cin>>t;while(t--)
+#define sets(a) memset(a, -1, sizeof(a))
+#define clr(a) memset(a, 0, sizeof(a))
+#define fr(n) for(int i=0;i<n;i++)
+#define fr1(n) for(int i=1;i<=n;i++)
+#define vll vector<ll>
+#define mll map<ll,ll>
+#define vvll vector<vector<ll>>
+#define vpll vector<pair<ll,ll>>
+#define vvpll vector<vector<pair<ll,ll>>>
+#define mpll map<pair<ll,ll>,ll>
+#define pll pair<ll,ll>
+#define sll stack<ll>
+#define qll queue<ll>
+#define pb push_back
+#define bs binary_search
+#define lb lower_bound
+#define ub upper_bound
+#define ff first
+#define ss second
+#define all(v) v.begin(),v.end()
+#define allr(x) x.rbegin(),x.rend()
+#define ma 1000000000000000000
+#define mi -1000000000000000000
+const ll mod=1e9+7;
+ll power(ll x, ll y, ll mod)
+{
+    ll res = 1;
+    x = x % mod;
+    if (x == 0) return 0; 
+ 
+    while (y > 0)
+    {
+        if (y & 1)
+            res = (res*x) % mod;
+        y = y>>1;
+        x = (x*x) % mod;
+    }
+    return res;
+}
+int main()
+{
+
+  fastio
+  test
+  {
+      int n,k;
+      cin>>n>>k;
+      
+     int a=1;
+     while(k % a == 0)a++;
+     
+      fr1(n){
+              cout<<i*a<<" ";
+      }
+     
+      cout<<endl;
+      
+      
+  }
+	return 0;
+}

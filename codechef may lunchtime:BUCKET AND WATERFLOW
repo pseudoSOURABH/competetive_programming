@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+#define ll long long 
+using namespace std;
+
+void solve(){
+        ll w,x,y,z;
+        cin>>w>>x>>y>>z;
+        
+        ll total=w+(y*z);
+        
+        if(total>x)
+        cout<<"overflow"<<endl;
+        
+        else if(total<x)
+        cout<<"unfilled"<<endl;
+        
+        else cout<<"filled"<<endl;
+}
+
+int main() {
+	// your code goes here
+	
+	int t;
+	cin>>t;
+	
+	while(t--)
+	solve();
+	return 0;
+}
